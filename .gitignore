@@ -16,6 +16,8 @@
 /docker-compose.override.yml
 /docker/mysql/data/
 
+/scripts/ansible/vars/
+
 ###> symfony/framework-bundle ###
 /.env.*.local
 /.env.local
