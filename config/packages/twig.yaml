@@ -2,6 +2,10 @@ twig:
     paths: ['%kernel.project_dir%/templates']
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    globals:
+        main_brand_title:  'iBath'
+        main_brand_email:  'ibatheu@gmail.com'
+        admin_tag_version: 'v0.0.01'
 
 services:
     _defaults:
