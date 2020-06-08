@@ -1,7 +1,7 @@
 {
     "keywords": ["symfony", "sylius", "ecommerce", "shopping"],
     "type": "project",
-    "license": "proprietary"
+    "license": "proprietary",
     "require": {
         "php": "^7.3",
         "sylius/sylius": "~1.7.0",
