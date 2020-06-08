@@ -2,6 +2,7 @@
 !/public/media/.gitkeep
 /public/uploads/*
 !/public/uploads/.gitkeep
+!/public/bundles/whiteoctoberpagerfanta/css/pagerfantaDefault.css
 
 /node_modules
 
@@ -21,7 +22,6 @@
 /.env.*.local
 /.env.local
 /.env.local.php
-/public/bundles/
 /var/cache/*
 /var/databases/*
 /var/log/*
