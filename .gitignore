@@ -1,8 +1,13 @@
-/public/assets
-/public/css
-/public/js
-/public/media
-!/public/media/image/.gitkeep
+/public/assets/*
+!/public/assets/.gitkeep
+/public/css/*
+!/public/css/.gitkeep
+/public/js/*
+!/public/js/.gitkeep
+/public/media/*
+!/public/media/.gitkeep
+/public/uploads/*
+!/public/uploads/.gitkeep
 
 /node_modules
 
@@ -22,8 +27,11 @@
 /.env.*.local
 /.env.local
 /.env.local.php
-/public/bundles
-/var/
+/public/bundles/
+/var/cache/*
+/var/databases/*
+/var/log/*
+!/var/log/.gitkeep
 /vendor/
 ###< symfony/framework-bundle ###
 
