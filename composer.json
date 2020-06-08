@@ -1,19 +1,7 @@
 {
-    "keywords": ["symfony", "sylius", "distribution", "ecommerce", "cart", "shopping"],
+    "keywords": ["symfony", "sylius", "ecommerce", "shopping"],
     "type": "project",
     "license": "proprietary",
-    "homepage": "https://sylius.com",
-    "authors": [
-        {
-            "name": "Paweł Jędrzejewski"
-        },
-        {
-            "name": "Sylius project"
-        },
-        {
-            "name": "Community contributions"
-        }
-    ],
     "require": {
         "php": "^7.3",
         "sylius/sylius": "~1.7.0",
