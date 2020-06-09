@@ -1,0 +1,9 @@
+{% extends '@SyliusShop/Account/layout.html.twig' %}
+
+{% block breadcrumb %}
+    {% include '@SyliusShop/Account/Order/Index/_breadcrumb.html.twig' %}
+{% endblock %}
+
+{% block subcontent %}
+    {{ sylius_template_event('sylius.shop.account.order.index.subcontent', _context) }}
+{% endblock %}

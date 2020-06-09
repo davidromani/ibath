@@ -1,9 +1,9 @@
 sylius_shop:
     resource: '@SyliusShopBundle/Resources/config/routing.yml'
     prefix:
-        en:    ''
+        en:    '/en'
         en_UK: ''
-        en_US: ''
+        en_US: '/en'
         es:    '/es'
         es_ES: '/es'
     requirements:
