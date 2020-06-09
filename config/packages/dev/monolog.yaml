@@ -1,7 +1,7 @@
 monolog:
     handlers:
         main:
-            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            path:  '%kernel.logs_dir%/%kernel.environment%.log'
             type:  stream
             level: debug
         firephp:
