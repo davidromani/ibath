@@ -1,18 +1,8 @@
 <div class="ui basic segment">
     <div class="ui large text menu">
-        <h1 class="ui teal floated header">
-            <a href="{{ path('sylius_shop_homepage') }}">
-                <i class="bath icon"></i>
-                <div class="content">
-                    {{ main_brand_title }}
-                </div>
-            </a>
-        </hi>
-        {#
-        <div class="ui small image">
-            <a href="{{ path('sylius_shop_homepage') }}"><img src="{{ asset('assets/shop/img/logo.png') }}" /></a>
+        <div class="ui header">
+            <a href="{{ path('sylius_shop_homepage') }}"><i class="bath big icon"></i> {{ main_brand_title }}</a>
         </div>
-        #}
         <div class="right menu">
             {% if order.customer.id|default(null) is not null %}
                 <div class="item" id="purchaser-email" {{ sylius_test_html_attribute('purchaser-name-or-email') }}>{{ 'sylius.ui.checking_out_as'|trans }} {{ order.customer.fullName|default(order.customer.email) }}.</div>
