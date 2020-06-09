@@ -2,10 +2,11 @@ Changelog
 =========
 
 ##### Version 0.0.03 (WIP)
- * add Sylius Sitemap plugin
+ * improve frontend customizations
 
 ##### Version 0.0.02 (2020-06-09)
  * replace frontend layout brand logo
+ * remove frontend circular icons
  * remove default locale route parameter
  * add Sylius Sitemap plugin
 
