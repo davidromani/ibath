@@ -1,6 +1,7 @@
 parameters:
     sylius.security.admin_regex: '^/admin'
     sylius.security.api_regex:   '^/api'
+#    sylius.security.shop_regex:  '^/'
     sylius.security.shop_regex:  '^/(?!admin|api/.*|api$|media/.*)[^/]++'
 
 security:
