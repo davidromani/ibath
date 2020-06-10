@@ -1,8 +1,12 @@
 Changelog
 =========
 
-##### Version 0.0.03 (WIP)
+##### Version 0.0.04 (WIP)
  * improve frontend customizations
+
+##### Version 0.0.03 (2020-06-10)
+ * vendors update
+ * set new email config
 
 ##### Version 0.0.02 (2020-06-09)
  * replace frontend layout brand logo
