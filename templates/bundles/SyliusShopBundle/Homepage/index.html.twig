@@ -16,10 +16,10 @@
         </div>
     </div>
     <div class="ui container">
+        <div class="ui hidden divider"></div>
         {% include '@SyliusShop/_flashes.html.twig' %}
         {{ sylius_template_event('sylius.shop.layout.before_content') }}
         <div class="homepage">
-            <div class="ui hidden divider"></div>
             {{ sylius_template_event('sylius.shop.homepage') }}
         </div>
         {{ sylius_template_event('sylius.shop.layout.after_content') }}
