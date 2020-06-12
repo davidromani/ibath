@@ -1,8 +1,14 @@
 Changelog
 =========
 
-##### Version 0.0.04 (WIP)
+##### Version 0.0.05 (WIP)
  * improve frontend customizations
+ * fix mailer sending problem
+
+##### Version 0.0.04 (2020-06-12)
+ * improve frontend homepage
+ * enable Google Analytics tracking
+ * replace default icons and images
 
 ##### Version 0.0.03 (2020-06-10)
  * vendors update
