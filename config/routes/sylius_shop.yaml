@@ -1,9 +1,9 @@
 sylius_shop:
     resource: '@SyliusShopBundle/Resources/config/routing.yml'
     prefix:
-        en:    '/en'
-        en_UK: '/en'
-        en_US: '/en'
+        en:    '/'
+        en_UK: '/'
+        en_US: '/'
         es:    '/es'
         es_ES: '/es'
     requirements:
@@ -11,9 +11,3 @@ sylius_shop:
 
 sylius_shop_payum:
     resource: '@SyliusShopBundle/Resources/config/routing/payum.yml'
-
-sylius_shop_default_locale:
-    path:    /
-    methods: [ GET ]
-    defaults:
-        _controller: sylius.controller.shop.locale_switch:switchAction

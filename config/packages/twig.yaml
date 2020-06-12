@@ -5,7 +5,7 @@ twig:
     globals:
         main_brand_title:  'iBath'
         main_brand_email:  'ibatheu@gmail.com'
-        admin_tag_version: 'v0.0.03'
+        admin_tag_version: 'v0.0.04'
 
 services:
     _defaults:

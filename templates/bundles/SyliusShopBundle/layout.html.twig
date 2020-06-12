@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="{{ app.request.locale | slice(0, 2) }}">
+<html lang="{{ app.request.locale|slice(0, 2) }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% block title %}{{ main_brand_title }}{% endblock %}</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
     {% block metatags %}{% endblock %}
     {% block stylesheets %}
         {{ sylius_template_event('sylius.shop.layout.stylesheets') }}
@@ -21,17 +23,19 @@
             {{ sylius_template_event('sylius.shop.layout.topbar') }}
         </div>
     {% endblock %}
-    <div class="ui container">
-        {% block header %}
-            <header>
-                {{ sylius_template_event('sylius.shop.layout.header') }}
-            </header>
-        {% endblock %}
-        {% include '@SyliusShop/_flashes.html.twig' %}
-        {{ sylius_template_event('sylius.shop.layout.before_content') }}
-        {% block content %}{% endblock %}
-        {{ sylius_template_event('sylius.shop.layout.after_content') }}
-    </div>
+    {% block body %}
+        <div class="ui container">
+            {% block header %}
+                <header>
+                    {{ sylius_template_event('sylius.shop.layout.header') }}
+                </header>
+            {% endblock %}
+            {% include '@SyliusShop/_flashes.html.twig' %}
+            {{ sylius_template_event('sylius.shop.layout.before_content') }}
+            {% block content %}{% endblock %}
+            {{ sylius_template_event('sylius.shop.layout.after_content') }}
+        </div>
+    {% endblock %}
     {% block footer %}
         {% include '@SyliusShop/_footer.html.twig' %}
     {% endblock %}
