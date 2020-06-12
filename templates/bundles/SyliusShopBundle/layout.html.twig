@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% block title %}{{ main_brand_title }}{% endblock %}</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
     {% block metatags %}{% endblock %}
     {% block stylesheets %}
         {{ sylius_template_event('sylius.shop.layout.stylesheets') }}
