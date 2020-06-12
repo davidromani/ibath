@@ -5,6 +5,7 @@
     "require": {
         "php": "^7.3",
         "setono/sylius-analytics-plugin": "^1.1",
+        "setono/sylius-tag-bag-plugin": "^1.0",
         "stefandoorn/sitemap-plugin": "^1.1",
         "sylius/sylius": "~1.7.0",
         "symfony/dotenv": "^4.4",

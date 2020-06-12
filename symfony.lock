@@ -500,6 +500,9 @@
     "setono/sylius-analytics-plugin": {
         "version": "v1.1.1"
     },
+    "setono/sylius-tag-bag-plugin": {
+        "version": "v1.0.0"
+    },
     "setono/tag-bag-bundle": {
         "version": "v1.3.0"
     },

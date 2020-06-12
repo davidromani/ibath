@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02dfc1877c1553f71275e28e641e44f8",
+    "content-hash": "9c2bf2050c6a03867b5f908df6db1ea6",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5100,6 +5100,72 @@
                 "sylius-plugin"
             ],
             "time": "2020-05-04T10:09:59+00:00"
+        },
+        {
+            "name": "setono/sylius-tag-bag-plugin",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Setono/SyliusTagBagPlugin.git",
+                "reference": "f1c9e841d8228097f8e6dac1dbc2ce0faf49b3cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Setono/SyliusTagBagPlugin/zipball/f1c9e841d8228097f8e6dac1dbc2ce0faf49b3cd",
+                "reference": "f1c9e841d8228097f8e6dac1dbc2ce0faf49b3cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "setono/tag-bag-bundle": "^1.0",
+                "sylius/sylius": "^1.4.0"
+            },
+            "conflict": {
+                "symfony/browser-kit": "4.1.8",
+                "symfony/dependency-injection": "4.1.8",
+                "symfony/dom-crawler": "4.1.8",
+                "symfony/routing": "4.1.8",
+                "symfony/symfony": "4.1.8"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^5.0",
+                "phpstan/phpstan-doctrine": "^0.10",
+                "phpstan/phpstan-shim": "^0.10",
+                "phpstan/phpstan-symfony": "^0.10",
+                "phpstan/phpstan-webmozart-assert": "^0.10",
+                "phpunit/phpunit": "^6.5",
+                "roave/security-advisories": "dev-master",
+                "sensiolabs/security-checker": "^5.0",
+                "sylius-labs/coding-standard": "^2.0",
+                "symfony/browser-kit": "^3.4|^4.1",
+                "symfony/debug-bundle": "^3.4|^4.1",
+                "symfony/dotenv": "^4.2",
+                "symfony/intl": "^3.4|^4.1",
+                "symfony/web-profiler-bundle": "^3.4|^4.1",
+                "symfony/web-server-bundle": "^3.4|^4.1"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Setono\\SyliusTagBagPlugin\\": "src/",
+                    "Tests\\Setono\\SyliusTagBagPlugin\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Plugin that integrates Setono/TagBagBundle into your Sylius project",
+            "keywords": [
+                "sylius",
+                "sylius-plugin"
+            ],
+            "time": "2019-04-10T09:45:13+00:00"
         },
         {
             "name": "setono/tag-bag-bundle",
