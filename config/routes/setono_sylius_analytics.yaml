@@ -1,0 +1,3 @@
+setono_sylius_analytics:
+    resource: '@SetonoSyliusAnalyticsPlugin/Resources/config/routing.yaml'
+    prefix:   /ga

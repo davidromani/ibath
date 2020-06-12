@@ -5,6 +5,7 @@ imports:
     - { resource: '@SyliusShopBundle/Resources/config/app/config.yml' }
     # plugins
     - { resource: '@SitemapPlugin/Resources/config/config.yml' }
+    - { resource: "@SetonoSyliusAnalyticsPlugin/Resources/config/app/config.yaml" }
 
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
