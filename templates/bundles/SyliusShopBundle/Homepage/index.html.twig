@@ -6,6 +6,14 @@
             {{ sylius_template_event('sylius.shop.layout.header') }}
         </header>
         <img class="ui fluid image" src="{{ asset('assets/shop/img/homepage-banner.jpg') }}" alt="{{ admin_tag_version }} homepage image header" style="z-index:-1;margin-top:-222px;">
+        <div class="ui basic inverted teal padded segment center aligned" style="margin-top:0;">
+            <a href="{{ path('sylius_shop_product_index', {slug: 'bath-accessories'}) }}" class="ui inverted teal massive animated button">
+                <div class="visible content">{{ 'sylius.homepage.call_to_action_button'|trans }}</div>
+                <div class="hidden content">
+                    <i class="shopping cart icon"></i>
+                </div>
+            </a>
+        </div>
     </div>
     <div class="ui container">
         {% include '@SyliusShop/_flashes.html.twig' %}

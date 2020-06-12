@@ -4,3 +4,4 @@ sylius:
   homepage:
     about_us_content: 'We are a team with more than 20 year of experience in Bath Design, and we decide to create this e-commerce to offer special products for you.'
     brace_yoursel_winter_is_coming: 'Find your perfect bath accessory'
+    call_to_action_button: "Visit our online store"
