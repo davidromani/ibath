@@ -5,7 +5,7 @@
     {% set columns = "three odd doubling" %}
 {% endif %}
 
-<div class="ui {{ columns|default('') }} cards">
+<div class="ui {{ columns|default('') }} stackable teal cards">
     {% for product in products %}
         {% include '@SyliusShop/Product/_box.html.twig' %}
     {% endfor %}
