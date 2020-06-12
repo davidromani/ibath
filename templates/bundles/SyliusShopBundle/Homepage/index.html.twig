@@ -1,9 +1,19 @@
 {% extends '@SyliusShop/layout.html.twig' %}
 
-{% block content %}
-    <div class="homepage">
-        <div class="ui hidden divider"></div>
-
-        {{ sylius_template_event('sylius.shop.homepage') }}
+{% block body %}
+    <div class="ui container fluid">
+        <header>
+            {{ sylius_template_event('sylius.shop.layout.header') }}
+        </header>
+        <img class="ui fluid image" src="{{ asset('assets/shop/img/homepage-banner.jpg') }}" alt="{{ admin_tag_version }} homepage image header" style="z-index:-1;margin-top:-222px;">
+    </div>
+    <div class="ui container">
+        {% include '@SyliusShop/_flashes.html.twig' %}
+        {{ sylius_template_event('sylius.shop.layout.before_content') }}
+        <div class="homepage">
+            <div class="ui hidden divider"></div>
+            {{ sylius_template_event('sylius.shop.homepage') }}
+        </div>
+        {{ sylius_template_event('sylius.shop.layout.after_content') }}
     </div>
 {% endblock %}
