@@ -10,12 +10,12 @@
         recursive: yes
         perms: yes
         times: yes
-        src: "{{ vhost_base_dir_prod }}/{{ mysql_db_remote_name_prod }}/shared/web/uploads"
+        src: "{{ vhost_base_dir_prod }}/{{ mysql_db_remote_name_prod }}/shared/public/media"
         dest: "{{ playbook_dir }}/../../public"
     - name: fix ownership in downloaded files locally
       delegate_to: mother
       file:
-        path: "{{ playbook_dir }}/../../public/uploads"
+        path: "{{ playbook_dir }}/../../public"
         recurse: yes
         follow: yes
         owner: "{{ local_system_user }}"
