@@ -1,7 +1,2 @@
 swiftmailer:
     url: '%env(MAILER_URL)%'
-    disable_delivery: false
-    logging: true
-    spool:
-        type: file
-        path: '%kernel.cache_dir%/spool'
