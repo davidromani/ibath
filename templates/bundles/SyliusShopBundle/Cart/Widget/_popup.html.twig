@@ -11,5 +11,8 @@
     </div>
     <a href="{{ path('sylius_shop_cart_summary') }}" class="ui fluid basic text button">{{ 'sylius.ui.view_and_edit_cart'|trans }}</a>
     <div class="ui divider"></div>
-    <a href="{{ path('sylius_shop_checkout_start') }}" class="ui fluid primary button">{{ 'sylius.ui.checkout'|trans }}</a>
+    <a href="{{ path('sylius_shop_checkout_start') }}" class="ui fluid teal labeled icon button">
+        <i class="check icon"></i>
+        {{ 'sylius.ui.checkout'|trans }}
+    </a>
 {% endif %}

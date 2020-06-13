@@ -27,7 +27,7 @@
                     {{ sylius_template_event('sylius.shop.product_review.create.form', {'product_review': product_review, 'form': form}) }}
 
                     {{ form_row(form._token) }}
-                    <button type="submit" class="ui blue labeled large icon submit button" {{ sylius_test_html_attribute('add') }}>
+                    <button type="submit" class="ui teal labeled large icon submit button" {{ sylius_test_html_attribute('add') }}>
                         <i class="icon check"></i> {{ 'sylius.ui.add'|trans }}
                     </button>
                 {{ form_end(form, {'render_rest': false}) }}

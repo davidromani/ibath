@@ -1,8 +1,12 @@
 Changelog
 =========
 
-##### Version 0.0.05 (WIP)
+##### Version 0.0.06 (WIP)
  * improve frontend customizations
+
+##### Version 0.0.05 (2020-06-13)
+ * improve images
+ * improve payments
  * fix mailer sending problem
 
 ##### Version 0.0.04 (2020-06-12)

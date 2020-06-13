@@ -10,6 +10,11 @@ imports:
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
 
+sylius_mailer:
+    sender:
+        name:    '%env(string:MAILER_SENDER_NAME)%'
+        address: '%env(string:MAILER_SENDER_ADDRESS)%'
+
 sylius_addressing:
     resources:
         address:

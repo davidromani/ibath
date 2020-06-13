@@ -3,9 +3,14 @@
 {% block body %}
     <div class="ui container fluid">
         <header>
-            {{ sylius_template_event('sylius.shop.layout.header') }}
+            <div class="ui basic" style="background-image:url('{{ asset('assets/shop/img/homepage-banner.jpg') }}');background-size:cover;background-position:center;background-repeat:no-repeat;">
+                <div class="ui one column grid centered">
+                    <a href="{{ path('sylius_shop_homepage') }}">
+                        <img src="{{ asset('assets/shop/img/ibath_logo_transparent_bg.png') }}" alt="{{ main_brand_title }} logo" class="ui medium image" style="margin:80px 0 90px 0;"/>
+                    </a>
+                </div>
+            </div>
         </header>
-        <img class="ui fluid image" src="{{ asset('assets/shop/img/homepage-banner.jpg') }}" alt="{{ admin_tag_version }} homepage image header" style="z-index:-1;margin-top:-222px;">
         <div class="ui basic inverted teal padded segment center aligned" style="margin-top:0;">
             <a href="{{ path('sylius_shop_product_index', {slug: 'bath-accessories'}) }}" class="ui inverted teal massive animated button">
                 <div class="visible content">{{ 'sylius.homepage.call_to_action_button'|trans }}</div>
@@ -16,10 +21,10 @@
         </div>
     </div>
     <div class="ui container">
+        <div class="ui hidden divider"></div>
         {% include '@SyliusShop/_flashes.html.twig' %}
         {{ sylius_template_event('sylius.shop.layout.before_content') }}
         <div class="homepage">
-            <div class="ui hidden divider"></div>
             {{ sylius_template_event('sylius.shop.homepage') }}
         </div>
         {{ sylius_template_event('sylius.shop.layout.after_content') }}
