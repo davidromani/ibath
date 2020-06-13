@@ -1,6 +1,6 @@
 swiftmailer:
     disable_delivery: false
-    delivery_address: '%env(string:MAILER_DEV_DELIVERY_ADDRESS)%'
+    delivery_addresses: [ '%env(string:MAILER_DEV_DELIVERY_ADDRESS)%' ]
     logging: true
     spool:
         type: file
