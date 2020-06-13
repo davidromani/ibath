@@ -3,8 +3,9 @@ twig:
     debug:            '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     globals:
-        main_brand_title:  'iBath'
-        main_brand_email:  'ibatheu@gmail.com'
+        main_brand_title:  '%env(string:MAIN_BRAND_TITLE)%'
+        main_brand_url:    '%env(string:MAIN_BRAND_URL)%'
+        main_brand_email:  '%env(string:MAIN_BRAND_EMAIL)%'
         admin_tag_version: 'v0.0.04'
 
 services:
