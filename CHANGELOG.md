@@ -3,6 +3,7 @@ Changelog
 
 ##### Version 0.0.06 (WIP)
  * improve frontend customizations
+ * create testing suite
 
 ##### Version 0.0.05 (2020-06-13)
  * improve images
