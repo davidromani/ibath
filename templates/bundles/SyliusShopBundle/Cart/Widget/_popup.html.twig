@@ -3,16 +3,45 @@
 {% if cart.empty %}
     {{ 'sylius.ui.your_cart_is_empty'|trans }}.
 {% else %}
-    <div class="ui list">
+    <table class="ui compact single line very basic table teal">
+        <tbody>
+        {% set total = 0 %}
         {% for item in cart.items %}
-            <div class="item">{{ item.quantity }} x <strong>{{ item.product }}</strong> {{ money.convertAndFormat(item.unitPrice) }}</div>
+            {% set total = total + item.subtotal %}
+            {% if item.product.imagesByType('thumbnail') is not empty %}
+                {% set imageProductPath = item.product.imagesByType('thumbnail').first.path|imagine_filter(filter|default('sylius_shop_product_tiny_thumbnail')) %}
+            {% elseif item.product.images.first %}
+                {% set imageProductPath = item.product.images.first.path|imagine_filter(filter|default('sylius_shop_product_tiny_thumbnail')) %}
+            {% else %}
+                {% set imageProductPath = '//placehold.it/30x30' %}
+            {% endif %}
+            <tr>
+                <td>
+                    <h4 class="ui image header">
+                        <img class="ui mini rounded image" src="{{ imageProductPath }}" alt="{{ item.product.name }}">
+                        <div class="content">
+                            {{ item.product }}
+                        </div>
+                    </h4>
+                </td>
+                <td class="right aligned">{{ money.convertAndFormat(item.unitPrice) }}</td>
+                <td class="right aligned">x {{ item.quantity }}</td>
+                <td class="right aligned">{{ money.convertAndFormat(item.subtotal) }}</td>
+            </tr>
         {% endfor %}
-        <div class="item"><strong>{{ 'sylius.ui.subtotal'|trans }}</strong>: {{ money.convertAndFormat(cart.itemsTotal) }}</div>
+        </tbody>
+        <tfoot>
+        <tr class="positive">
+            <th class="right aligned" colspan="3"><strong>{{ 'sylius.ui.items_total'|trans|title }}</strong></th>
+            <th class="right aligned"><strong>{{ money.convertAndFormat(total) }}</strong></th>
+        </tr>
+        </tfoot>
+    </table>
+    <div class="ui basic segment">
+        <a href="{{ path('sylius_shop_checkout_start') }}" class="ui right floated teal labeled icon button">
+            <i class="check icon"></i>
+            {{ 'sylius.ui.checkout'|trans }}
+        </a>
+        <a href="{{ path('sylius_shop_cart_summary') }}" class="ui left floated olive basic text button">{{ 'sylius.ui.view_and_edit_cart'|trans }}</a>
     </div>
-    <a href="{{ path('sylius_shop_cart_summary') }}" class="ui fluid basic text button">{{ 'sylius.ui.view_and_edit_cart'|trans }}</a>
-    <div class="ui divider"></div>
-    <a href="{{ path('sylius_shop_checkout_start') }}" class="ui fluid teal labeled icon button">
-        <i class="check icon"></i>
-        {{ 'sylius.ui.checkout'|trans }}
-    </a>
 {% endif %}

@@ -1,8 +1,12 @@
 Changelog
 =========
 
-##### Version 0.0.06 (WIP)
+##### Version 0.0.07 (WIP)
  * improve frontend customizations
+ * create testing suite
+
+##### Version 0.0.06 (2020-06-14)
+ * improve frontend popup summary cart
 
 ##### Version 0.0.05 (2020-06-13)
  * improve images
