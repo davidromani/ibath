@@ -2,6 +2,9 @@ sylius:
   ui:
     your_store: iBath
   homepage:
+    first_claim: 'Turn your bathroom into an explosion of sensations'
+    second_claim: 'Unique bathroom accessories with style and functionality for exclusive projects.'
+    third_claim: 'Made with high resistance, waterproof, antibacterial, non-porous materials, with imperceptible joints.'
     about_us_content: 'We are a team with more than 20 year of experience in Bath Design, and we decide to create this e-commerce to offer special products for you.'
     brace_yoursel_winter_is_coming: 'Find your perfect bath accessory'
     call_to_action_button: "Visit our online store"

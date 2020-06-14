@@ -11,13 +11,28 @@
                 </div>
             </div>
         </header>
-        <div class="ui basic inverted teal padded segment center aligned" style="margin-top:0;">
+        <div class="ui basic inverted teal padded segment center aligned" style="margin:0;">
             <a href="{{ path('sylius_shop_product_index', {slug: 'bath-accessories'}) }}" class="ui inverted teal massive animated button">
                 <div class="visible content">{{ 'sylius.homepage.call_to_action_button'|trans }}</div>
                 <div class="hidden content">
                     <i class="cart arrow down icon"></i>
                 </div>
             </a>
+        </div>
+        <div class="ui basic very padded segment" style="background-image:url('{{ asset('assets/shop/img/tap.jpg') }}');background-size:cover;background-position:center;background-repeat:no-repeat;margin:0;">
+            <div class="ui one column grid centered" style="margin:50px">
+                <h2 class="ui teal header">
+                    <i class="heart outline icon"></i>
+                    <div class="content">
+                        {{ 'sylius.homepage.first_claim'|trans }}
+                    </div>
+                </h2>
+                <div class="ui teal message" style="background-color:rgba(255, 255, 255, 0.80)">
+                    <p><strong>{{ 'sylius.homepage.second_claim'|trans }}</strong></p>
+                    <div class="ui olive divider"></div>
+                    <p><strong>{{ 'sylius.homepage.third_claim'|trans }}</strong></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="ui container">
