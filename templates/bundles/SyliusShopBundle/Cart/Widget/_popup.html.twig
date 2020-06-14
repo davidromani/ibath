@@ -3,15 +3,7 @@
 {% if cart.empty %}
     {{ 'sylius.ui.your_cart_is_empty'|trans }}.
 {% else %}
-    <table class="ui very compact single line basic small table teal">
-{#        <thead>#}
-{#        <tr>#}
-{#            <th>{{ 'sylius.ui.item'|trans }}</th>#}
-{#            <th class="right aligned">{{ 'sylius.ui.unit_price'|trans }}</th>#}
-{#            <th class="right aligned">{{ 'sylius.ui.qty'|trans }}</th>#}
-{#            <th class="right aligned">{{ 'sylius.ui.total'|trans }}</th>#}
-{#        </tr>#}
-{#        </thead>#}
+    <table class="ui compact single line very basic table teal">
         <tbody>
         {% set total = 0 %}
         {% for item in cart.items %}
@@ -40,15 +32,17 @@
         </tbody>
         <tfoot>
         <tr class="positive">
-            <th class="right aligned" colspan="3"><strong>{{ 'sylius.ui.total'|trans|upper }}</strong></th>
+            <th class="right aligned" colspan="3"><strong>{{ 'sylius.ui.items_total'|trans|title }}</strong></th>
             <th class="right aligned"><strong>{{ money.convertAndFormat(total) }}</strong></th>
         </tr>
         </tfoot>
     </table>
-    <a href="{{ path('sylius_shop_cart_summary') }}" class="ui fluid basic text button">{{ 'sylius.ui.view_and_edit_cart'|trans }}</a>
-    <div class="ui divider"></div>
-    <a href="{{ path('sylius_shop_checkout_start') }}" class="ui fluid teal labeled icon button">
-        <i class="check icon"></i>
-        {{ 'sylius.ui.checkout'|trans }}
-    </a>
+{#    <div class="ui fitted divider"></div>#}
+    <div class="ui basic segment">
+        <a href="{{ path('sylius_shop_checkout_start') }}" class="ui right floated teal labeled icon button">
+            <i class="check icon"></i>
+            {{ 'sylius.ui.checkout'|trans }}
+        </a>
+        <a href="{{ path('sylius_shop_cart_summary') }}" class="ui left floated olive basic text button">{{ 'sylius.ui.view_and_edit_cart'|trans }}</a>
+    </div>
 {% endif %}
