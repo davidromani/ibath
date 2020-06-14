@@ -7,7 +7,7 @@ twig:
         main_brand_url:                     '%env(string:MAIN_BRAND_URL)%'
         main_brand_email:                   '%env(string:MAIN_BRAND_EMAIL)%'
         main_brand_assistance_phone_number: '%env(string:MAIN_BRAND_ASSISTANCE_PHONE_NUMBER)%'
-        admin_tag_version:                  'v0.0.05'
+        admin_tag_version:                  'v0.0.06'
 
 services:
     _defaults:
